@@ -82,7 +82,7 @@ header .live-chat > a{
     position: relative;
     height:100%;
     border:1px solid var(--header-font-color);
-    padding: 3px 14px;
+    padding: 0px 14px;
 }
 header .live-chat>a:before,.live-chat>a:after{
     position: absolute;
