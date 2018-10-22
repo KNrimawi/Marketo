@@ -161,11 +161,7 @@ nav{
     background: #4b345d;
     height: 94px;
 }
-.logo
-{
 
-
-}
 .menubox{
     margin-top: 8px;;
     width: 48px;
@@ -192,6 +188,7 @@ nav{
     background: #4b345d;
     padding: 10px;
     min-width: 100%;
+    height: calc(100vh - 90px);
     overflow: auto;
     top: 100%;
     right:-15px;
@@ -307,6 +304,11 @@ footer>iframe{
     }
 
 
+}
+@media (max-width:768px){
+    footer{
+        display: block;
+    }
 }
 @media (max-width:450px){
     .app-container{
