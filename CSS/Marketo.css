@@ -313,7 +313,10 @@ footer>iframe{
     
     }
 }
-.form-container .mktoForm select.mktoField{
+.form-container .mktoForm {
+    color: #6D6D65 !important; 
+}
+.form-container .mktoForm select{
     color: #6D6D65 !important;  
 }
 @media (max-width:450px){
