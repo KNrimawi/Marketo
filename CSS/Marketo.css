@@ -230,7 +230,7 @@ hr{
 .header>h1{
     font-size: 50px;
     text-transform: uppercase;
-    color: #463f2e;
+    color: #4b345d;
 
 
     font-weight: normal;
@@ -313,7 +313,21 @@ footer>iframe{
     
     }
 }
+.form-container .mktoForm select.mktoField{
+    color: #6D6D65 !important;  
+}
 @media (max-width:450px){
+    .form-container .mktoForm select.mktoField{
+        font-size: 26px !important; 
+        
+    }
+    .form-container .mktoField{
+        font-size: 26px !important;
+   
+       }
+    .form-title{
+        margin-top: 6.5px;
+    }
     .footer-text{
         
         font-size: 26px;
@@ -430,6 +444,10 @@ footer>iframe{
         left:auto;
 
     }
+  
+ .form-title{
+        margin-top: 7px;
+    }
 }
 @media (max-width: 800px) {
     .main-image{
@@ -462,5 +480,15 @@ footer>iframe{
     .form-container .mktoFormRow{
         width: 100%!important;
     }
+}
+.social-icon-menu{
+    background-color: var(--social-icons-bg-color);
+    width: 34px;
+    height:33px;
+    padding-top:6.5px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #9e94a7;
 }
 
