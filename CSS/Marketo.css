@@ -1,0 +1,451 @@
+:root{
+    --main:#4b345d;
+    --header-font-color:#d5d5d5;
+    --body-color:#e2e2d7;
+    --form-font-color:#6d6d65;
+    --button-bg-color:	hsl(331, 99%, 46%);
+    --button-hover-color:hsl(331, 99%, 56%);
+    --input-border-color:#8f8f87;
+    --social-icons-bg-color:#9e94a7;
+}
+form{
+    width: 100% !important;
+}
+@font-face {
+    src: url("../fonts/vistasanslight-020415006EmigreWebOnly.woff2");
+    font-family: vista-sans;
+}
+.app-container{
+    padding:0;
+    width: 100%;
+    margin:0 auto;
+}
+nav{
+    display: none;
+}
+body{
+
+    background-color: var(--body-color);
+}
+a{
+    text-decoration: none;
+}
+select{
+    -webkit-appearance:none;  /* for chrome & safari */
+    -moz-appearance: none; /* for mozilla */
+    background-image:url("../images/down-arrow.png");
+    width: 100%;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position:95% center;
+}
+header{
+  /*  position: relative;*/
+    background-color: var(--main);
+    height: 90px ;
+}
+
+header .app-container{
+    padding-top: 12px;
+}
+
+header .links{
+    height: 30px;
+    margin-top: 4px;
+}
+header .links a{
+    display: inline-block;
+    color:var(--header-font-color);
+}
+header .social-icon{
+    background-color: var(--social-icons-bg-color);
+    width: 34px;
+    height:33px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+}
+header .social-icon:nth-child(3){
+    margin-left: 48px;
+}
+header .social-icon>a{
+    color:var(--main) !important;
+}
+
+header .live-chat{
+    margin-left: 48px;
+}
+header .live-chat > a{
+    font-family: vista-sans;
+    font-size: 19px;
+    position: relative;
+    height:100%;
+    border:1px solid var(--header-font-color);
+    padding: 3px 14px;
+}
+header .live-chat>a:before,.live-chat>a:after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 5px solid transparent;
+    left:20px;
+}
+header .live-chat>a:after{
+    border-top: 10px solid var(--main);
+    top: 100%;
+}
+header .live-chat>a:before{
+    border-top: 10px solid white;
+    top: calc(100% + 1px);
+}
+header a:hover{
+    text-decoration: none;
+    color: #ffffff !important;
+}
+header .menu-bar{
+    display: none;
+}
+.app-container.section{
+    padding-top: 22px;
+}
+.content .form-container{
+    flex-basis: 347px;
+    max-width: 347px;
+    margin-right: 90px;
+    font-family: vista-sans;
+}
+.content .form-container .form-title{
+    font-family: vista-sans;
+    color:var(--main);
+    font-size:24px;
+    margin-bottom: 23px;
+    padding-top: 11px;
+}
+.content .form-container .form-title .first-word{
+    display: none;
+}
+.content .form-container .form-title .second-word{
+    text-transform: capitalize;
+}
+
+.content .form-container input,.content .form-container select{
+    font-family: vista-sans;
+}
+
+.content .form-container .form-information-par{
+
+    font-family: vista-sans;
+    font-size:10px;
+    text-align: center;
+    color:var(--form-font-color);
+    line-height: 15px;
+    margin-top: 14px;
+}
+.content .form-container .mktoFormCol{
+    margin-bottom: 14px!important;
+}
+.content .main-image{
+    align-self: flex-end;
+}
+
+/*.mktoFormRow{
+   max-height: 37px!important;
+}*/
+
+/*Mobile*/
+nav{
+    background: #4b345d;
+    height: 94px;
+}
+.logo
+{
+
+
+}
+.menubox{
+    margin-top: 8px;;
+    width: 48px;
+    height: 39px;
+
+}
+.dropbtn {
+
+
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+
+    display: none;
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #4b345d;
+    padding: 10px;
+    min-width: 100%;
+    overflow: auto;
+    top: 100%;
+    right:-15px;
+    left:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100vw;
+}
+hr{
+    border: #d4d4ce solid 1px;
+    display: none;
+    width: 304px;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    font-size: 19px;
+    font-weight: 200;
+    text-decoration: none;
+    display: block;
+    background-color: #2d1938;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.dropdown a:hover {
+    color: #e90172 !important;
+    text-decoration: none;}
+
+.show {display: block;}
+.header{
+    width: 100%;
+    height: 160px;
+    padding-top: 21px;
+    background: url("../images/ApplicationMobile_320_header.jpg") ;
+    display: none;
+}
+.header>h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #463f2e;
+
+
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    word-spacing: -5px;
+    text-align: center;
+
+}
+footer{
+    display: none;
+    background-color: #f7f7ef;
+    text-align: center;
+}
+footer>iframe{
+    margin-top: 26px;
+    height:256px;
+    width:292px;
+    display: inline-block;
+
+
+}
+.footer-text{
+    font-family: vista-sans;
+    color: #4b345d;
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 98px;
+    text-transform: capitalize;
+
+}
+/*Mobile*/
+.form-container .mktoFieldDescriptor .mktoFormCol{
+    width: 100%!important;
+}
+
+@media (min-width: 1025px) {
+    .app-container {
+        max-width: 980px;
+    }
+    .app-container.section{
+        max-width: 1003px;
+        padding-left: 11px;
+    }
+    .logo{
+        width:261px;
+        height: 66px;
+    }
+
+}
+
+@media (max-width: 1025px){
+    .app-container{
+        padding: 0 15px;
+    }
+    header .links{
+        display:none !important;
+    }
+    header .menu-bar{
+        display:block;
+    }
+    .dropdown{
+        display: block;
+        margin-top: 10px;
+    }
+    .main-image{
+        width: 500px;
+    }
+
+
+}
+@media (max-width:450px){
+    .app-container{
+        padding: 0 15px!important;
+    }
+    .main-image{
+        display: none;
+    }
+    header .links{
+        display: none!important;
+    }
+    header nav{
+        display: block;
+    }
+    .logo{
+        width: 235px;
+        height: 62px;
+        margin-top: 16px;
+        margin-left: 1.5px;
+    }
+    header{
+        height:94px;
+    }
+
+    .form-container{
+        text-align: center;
+        height: 2500px;
+        width: 320px;
+        margin: 0 auto!important;
+
+    }
+    .header{
+        display: block;
+    }
+    .app-container.section{
+        padding: 0 !important;
+        width: 320px;
+    }
+    .dropdown{
+        margin-top: 25px;
+    }
+    footer{
+        display: block;
+    }
+    hr{
+        display: block;
+    }
+    .content .form-container .mktoFormCol{
+        margin-bottom: 21px!important;
+    }
+    .content .form-container .form-title{
+        font-size: 38px;
+    }
+    .content .form-container .form-title .first-word{
+        display: inline;
+        text-transform: capitalize;
+    }
+    .content .form-container .form-title .second-word{
+        text-transform: none;
+    }
+}
+@media (max-width:370px){
+    .header>h1{
+        font-size: 40px;
+
+
+    }
+}
+@media (max-width:320px){
+    .app-container{
+        padding-left: 7.5px!important;
+        padding-right: 7.5px!important;
+    }
+    .form-container{
+        width: 319px;
+    }
+    .logo{
+
+        width: 235px;
+        height: 62px;
+        margin-top: 13.50px;
+        margin-left: 0px;
+        margin-right: 17px;
+    }
+
+    footer>iframe{
+
+        height:253.5px;
+
+
+    }
+    .dropdown-content {
+
+
+
+        min-width: 100%;
+        overflow: auto;
+        top: 100%;
+        right:0px;
+        left:auto;
+
+    }
+}
+@media (max-width: 800px) {
+    .main-image{
+        display: none;
+    }
+    .form-container{
+        width: 100%!important;
+        max-width: 100%!important;
+        margin: 0 auto!important;
+    }
+    .form-information-par{
+        font-size: 20px!important;
+        line-height: inherit!important;
+    }
+
+
+}
+@media (max-width: 955px) {
+    .content .form-container{
+        margin-right: 45px;
+    }
+}
+@media (max-width: 908px){
+    .main-image{
+        width: 400px;
+    }
+}
+@media (max-width: 500px) and (min-width: 460px){
+
+
+}
+@media (max-width: 460px) and (min-width: 360px){
+    .form-container .mktoFormRow{
+        width: 100%!important;
+    }
+}
+select{
+
+
+}

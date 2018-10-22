@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/bootstrap-4.0.0/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/Marketo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="app-container d-flex justify-content-between">
+
+        <div>
+            <img src="images/LOGO.png" alt="" class="logo">
+        </div>
+        <div class="links d-flex justify-content-end">
+            <div>
+                <a href="#" style="font-size: 15px;padding-top:4px;font-family:vista-sans"> Contact us ></a>
+            </div>
+
+            <div class="live-chat">
+                <a href="#" style="font-size: 15px">Live Chat <span
+                        style="color:#79ce2d;margin-left: 5px;">ON</span></a>
+            </div>
+            <div class="social-icon">
+                <a href="#" class="fa fa-facebook-f"></a>
+            </div>
+            <div class="social-icon">
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <div class="social-icon">
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div class="social-icon">
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">
+                    <img src="images/MenuBox_450.png" alt="" ></a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Contact Us</a>
+                    <a href="#about">Live Chat</a>
+                    <a href=""><span class="fa fa-facebook-f float-right"></span> Facebook</a>
+                    <a href=""><span class="fa fa-youtube float-right"></span> Youtube</a>
+                    <a href=""><span class="fa fa-linkedin float-right"></span> Linked in</a>
+                    <a href=""><span class="fa fa-twitter float-right"></span> Twitter</a>
+
+                </div>
+            </div>
+
+
+
+    </div>
+
+</header>
+
+<div style="background-color: #f7f7ef" class="main">
+    <div class="header">
+        <h1 >Earn a Degree <br>Tuition-Free</h1>
+    </div>
+    <div class="app-container section">
+
+        <div class="d-flex content">
+            <div class="form-container">
+                <p class="form-title"><span class="first-word">please</span> <span class="second-word">fill</span> in your details below:</p>
+                <form id="mktoForm_1307"></form>
+                <p class="form-information-par">
+                    For information about applying to University of the People,please
+                    review our Admissions Policy. By clicking on 'I accept',you agree
+                    to the UoPeople Privacy Policy terms & to receive marketing materials
+                </p>
+            </div>
+            <img src="images/img1.png" class="main-image" alt="" style="max-height: 493px">
+
+        </div>
+        <hr>
+        <footer>
+            <iframe  src="https://www.youtube.com/embed/uyq1OOZhNig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h1 class="footer-text">500 syrian refugees will <br> get scholarship</h1>
+        </footer>
+    </div>
+</div>
+
+<script src="http://app-sj02.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+<script>
+    $(document).ready(function()
+    {
+        MktoForms2.loadForm("http://app-sj02.marketo.com", "972-VUZ-580", 1307, function (form)
+        {
+            //Show cookie warning
+            $(".sec_title h2").append("<br /><br /><div style='color: #E90172; font-size: 18px; font-weight: bold'>Our online application uses cookies to give you the best experience. Please enable cookies on your browser to start.</div>");
+            $("button[type=submit]").prop("disabled", "true");
+
+            form.onSuccess(function (values, followUpUrl)
+            {
+                $('.wiz_step.active').removeClass('active');
+                $('.wiz_step[data-index="2"]').addClass('active');
+                var stateObj = { ws: "2" };
+                window.location.href = baseUrl + "/p2/?&email=" + $("#Email").val() + "&step=2";
+                return false;
+            });
+        });
+
+    });
+</script>
+<script>
+
+    $(".dropbtn").click(function(){
+        $("#myDropdown").toggleClass("show");
+    });
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>
