@@ -144,6 +144,7 @@ header .menu-bar{
     color:var(--form-font-color);
     line-height: 15px;
     margin-top: 14px;
+
 }
 .content .form-container .mktoFormCol{
     margin-bottom: 14px!important;
@@ -188,7 +189,7 @@ nav{
     background: #4b345d;
     padding: 10px;
     min-width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 86px);
     overflow: auto;
     top: 100%;
     right:-15px;
@@ -210,7 +211,7 @@ hr{
     text-decoration: none;
     display: block;
     background-color: #2d1938;
-    width: 90%;
+    width: 100%;
     margin:auto;
     margin-bottom: 10px;
 }
@@ -405,6 +406,10 @@ footer>iframe{
         height:256px;
         width:292px;
     }
+    .content .form-container .form-information-par{
+        padding: 0 9px;
+        margin-left: 8px;
+    }
 }
 @media (max-width:370px){
     .header>h1{
@@ -420,6 +425,11 @@ footer>iframe{
     }
     .form-container{
         width: 319px;
+    }
+    .content .form-container .form-information-par{
+        padding: 0 12px;
+        margin-right: 20px;
+
     }
     .logo{
 
@@ -492,6 +502,6 @@ footer>iframe{
     border-radius: 50%;
     text-align: center;
     font-size: 20px;
-    background-color: #9e94a7;
+    /*background-color: #9e94a7;*/
 }
 
