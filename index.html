@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height">
     <title>Title</title>
     <link rel="stylesheet" href="CSS/bootstrap-4.0.0/dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -91,7 +91,7 @@
 
 <script src="http://app-sj02.marketo.com/js/forms2/js/forms2.min.js"></script>
 <script>
-    var bool=true;
+        var bool=true;
     $(document).ready(
 
         function () {
@@ -99,10 +99,12 @@
                function () {
                    if(bool){
                    $("body").css("overflow", "hidden");
+                       $("html").css("overflow", "hidden");
                 bool=!bool;
                    }else
                    {
                        $("body").css("overflow", "visible");
+                       $("html").css("overflow", "visible");
                        bool=!bool;
                    }
                }
