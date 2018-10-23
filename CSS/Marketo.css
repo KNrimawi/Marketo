@@ -320,7 +320,10 @@ footer>iframe{
 .form-container .mktoForm {
     color: #6D6D65 !important; 
 }
-.form-container .mktoForm select{
+.form-container input, .form-container .actual-edit-overlay{
+    -webkit-text-fill-color:var(--form-font-color)!important;
+}
+.form-container .mktoForm select.mktoField,.form-container .mktoForm input{
     color: #6D6D65 !important;  
 }
 @media (max-width:450px){
