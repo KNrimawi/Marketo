@@ -15,14 +15,7 @@ form{
     src: url("../fonts/vistasansaltlight-071211005EmigreWebOnly.eot"),url("../fonts/vistasanslight-020415006EmigreWebOnly.woff2");
     font-family: vista-sans;
 }
-.app-container{
-    padding:0;
-    width: 100%;
-    margin:0 auto;
-}
-nav{
-    display: none;
-}
+
 body{
 
     background-color: var(--body-color);
@@ -43,6 +36,11 @@ select{
 }
 select::-ms-expand{
     display: none;
+}
+.app-container{
+    padding:0;
+    width: 100%;
+    margin:0 auto;
 }
 header{
   /*  position: relative;*/
@@ -169,13 +167,12 @@ header .menu-bar{
     align-self: flex-end;
 }
 
-/*.mktoFormRow{
-   max-height: 37px!important;
-}*/
+
 
 /*Mobile*/
 nav{
     background: #4b345d;
+    display: none;
     height: 94px;
 }
 
@@ -186,17 +183,13 @@ nav{
 
 }
 .dropbtn {
-
-
     border: none;
     cursor: pointer;
 }
 
 .dropdown {
-
     display: none;
     position: relative;
-
 }
 
 .dropdown-content {
@@ -209,9 +202,8 @@ nav{
     overflow: auto;
     top: 100%;
     right:-15px;
-    left:auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 99;
     width: 100vw;
 }
 hr{
@@ -228,15 +220,17 @@ hr{
     display: block;
     background-color: #2d1938;
     width: 100%;
-    margin:auto;
-    margin-bottom: 10px;
+    margin:0 auto 10px auto;
 }
 
 .dropdown a:hover {
     color: #e90172 !important;
-    text-decoration: none;}
+    text-decoration: none;
+}
 
-.show {display: block;}
+.show {
+    display: block;
+}
 .header{
     width: 100%;
     height: 160px;
@@ -248,14 +242,11 @@ hr{
     font-size: 50px;
     text-transform: uppercase;
     color: #4b345d;
-
-
     font-weight: normal;
     padding: 0;
     margin: 0;
     word-spacing: -5px;
     text-align: center;
-
 }
 footer{
     display: none;
@@ -267,15 +258,22 @@ footer{
     color:#4b345d;
 }
 footer>iframe{
-  
     display: inline-block;
-
-
 }
 
 /*Mobile*/
 .form-container .mktoFieldDescriptor .mktoFormCol{
     width: 100%!important;
+}
+.form-container .mktoForm {
+    color: #6D6D65 !important;
+}
+.form-container input, .form-container .actual-edit-overlay{
+    -webkit-text-fill-color:var(--form-font-color)!important;
+
+}
+.form-container .mktoForm select.mktoField,.form-container .mktoForm input{
+    color: #6D6D65 !important;
 }
 
 @media (min-width: 1025px) {
@@ -288,21 +286,10 @@ footer>iframe{
     }
     .logo{
         width:261px;
-        height: 66px;
     }
-
 }
 
-.form-container .mktoForm {
-    color: #6D6D65 !important;
-}
-.form-container input, .form-container .actual-edit-overlay{
-    -webkit-text-fill-color:var(--form-font-color)!important;
 
-}
-.form-container .mktoForm select.mktoField,.form-container .mktoForm input{
-    color: #6D6D65 !important;
-}
 @media (max-width: 1025px){
     .app-container{
         padding: 0 15px;
@@ -336,39 +323,42 @@ footer>iframe{
 
 @media (max-width: 800px) {
     header{
-        height:128px!important;
+        height:128px;
     }
     .header{
         display: block;
     }
     .content .form-container .form-title .first-word{
         display: inline;
-
     }
     .content .form-container .form-title{
-        font-size: 35px;;
+        font-size: 35px;
+        margin-bottom: 16px;
         font-family: vista-sans;
     }
     .header{
-        width: 100%;
         height: 160px;
         padding-top: 21px;
-        background: url("../images/tablet-background.png") ;
-
+        background: url("../images/ApplicationTablet_800.png") ;
     }
     .header>h1{
         text-align: left;
-        padding-left: 75px !important;
+        padding-left: 57px;
         font-size: 50px;
     }
+    .app-container.section{
+        max-width: 715px;
+        padding: 0 15px;
+    }
+
     .form-container .mktoForm select.mktoField,.form-container .mktoForm input,.form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
-        width: 685px !important;
+        width: 100% !important;
         height: 70px !important;
-        font-size: 28px !important;
+        font-size: 30px !important;
         padding-left: 25px !important;
     }
     .form-container #FirstName,.form-container #LastName{
-        width: 685px!important;
+        width: 100%!important;
     }
     .form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
         padding-left: 0!important;
@@ -377,19 +367,27 @@ footer>iframe{
     .form-container .mktoForm .mktoButtonRow{
         padding-left: 0!important;
     }
+    .form-container .mktoForm .mktoFormRow{
+        width: 100%!important;
+    }
     .logo{
         padding-left: 4px;
         width:336px;
-        height: 87px;
-
+    }
+    .form-container .mktoForm .mktoFormCol{
+        width: 100%;
+    }
+    .form-container .mktoForm .mktoFieldWrap{
+        width: 100%;
     }
     .main-image{
         display: none;
     }
-    .form-container{
-        width: 100%!important;
-        max-width: 100%!important;
-        margin: 0 auto!important;
+    .content .form-container{
+        width: 100% !important;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-basis: 100%;
     }
     .form-information-par{
         font-size: 20px!important;
@@ -397,24 +395,21 @@ footer>iframe{
     }
 
 
-
 }
-@media (max-width:450px){
+@media (max-width:451px){
     .form-container .mktoForm select.mktoField,.form-container .mktoForm input{
         font-size: 26px !important;
 
     }
     .header>h1{
-        font-size: 50px!important;
-        text-transform: uppercase!important;
-        color: #4b345d!important;
-
-
-        font-weight: normal!important;
-        padding-left: 0!important;
-        margin: 0!important;
-        word-spacing: -5px!important;
-        text-align: center!important;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #4b345d;
+        font-weight: normal;
+        padding-left: 0;
+        margin: 0;
+        word-spacing: -5px;
+        text-align: center;
 
     }
     .form-container .mktoField{
@@ -422,26 +417,23 @@ footer>iframe{
 
     }
     .form-title{
-        margin-top: 6.5px!important;
+        margin-top: 6.5px;
     }
     .footer-text{
-
-        font-size: 26px!important;
-
-        margin: 0!important;
-        margin-top: 12px!important;
-        padding-bottom: 98px!important;
-
-
+        font-size: 26px;
+        margin: 0;
+        margin-top: 12px;
+        padding-bottom: 98px;
     }
     .app-container{
-        padding: 0 17px!important;
+        padding: 0 17px;
     }
     .dropdown-content{
-        right: -18px!important;
+        right: -18px;
     }
-    .main-image{
-        display: none!important;
+    .app-container.section{
+        max-width: 320px;
+        min-width: 320px;
     }
 
     header .links{
@@ -541,32 +533,26 @@ footer>iframe{
     .header>h1{
         font-size: 40px!important;
     }
-    .content .form-container{
-        width: 294px!important;
-    }
+   
     .form-container .mktoForm .mktoButtonRow{
         padding-left: 0!important;
     }
-    .form-container #FirstName,.form-container #LastName,.form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow,.form-container .mktoForm select.mktoField, .form-container .mktoForm input{
-        width: 100%!important;
-    }
+
 }
 
-@media (max-width:320px){
+@media (max-width:321px){
 
     header .app-container{
         padding-left: 5px!important;
         padding-right: 9px!important;
     }
-    .form-container .mktoForm .mktoButtonRow{
-        width: 294px!important;
-        padding-left: 0!important;
+    .app-container.section{
+        max-width: 294px;
+        min-width: 294px;
     }
-    .form-container{
-        width: 319px!important;
-    }
-    .form-container #mktoForm_1307{
-        padding-left:12px!important ;
+
+    hr{
+        width: 100%;
     }
     .content .form-container .form-information-par{
         padding: 0 12px!important;
@@ -579,7 +565,7 @@ footer>iframe{
         margin-top:14px!important;
         margin-bottom: 22px!important;
         text-align: left!important;
-        padding-left: 12px!important;
+
     }
     .header>h1{
         font-size: 40px!important;
@@ -601,15 +587,11 @@ footer>iframe{
 
     }
     .dropdown-content {
-
-
-
         min-width: 100%!important;
         overflow: auto!important;
         top: 100%!important;
         right:-9px!important;
         left:auto!important;
-
     }
 
     .form-title{
@@ -628,19 +610,8 @@ footer>iframe{
     .form-container .mktoForm select.mktoField, .form-container .mktoForm input{
         padding-left: 10px!important;
     }
-    .form-container .mktoFormRow,.form-container .mktoForm .mktoButtonRow{
-        width: 294px!important;
-    }
+
 }
 
-.social-icon-menu{
-    background-color: var(--social-icons-bg-color);
-    background-color: #9e94a7;
-    width: 34px;
-    height:33px;
-    padding-top:6.5px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 20px;
-}
+
 
