@@ -3,7 +3,7 @@
     --header-font-color:#d5d5d5;
     --body-color:#e2e2d7;
     --form-font-color:#6d6d65;
-    --button-bg-color:	hsl(331, 99%, 46%);
+    --button-bg-color:	#e90171;
     --button-hover-color:hsl(331, 99%, 56%);
     --input-border-color:#8f8f87;
     --social-icons-bg-color:#9e94a7;
@@ -121,8 +121,8 @@ header .menu-bar{
 .content .form-container .form-title{
     font-family: vista-sans;
     color:var(--main);
-    font-size:24px;
-    margin-bottom: 23px;
+    font-size:26px;
+    margin-bottom: 20px;
     padding-top: 11px;
 }
 .content .form-container .form-title .first-word{
@@ -148,6 +148,9 @@ header .menu-bar{
 }
 .content .form-container .mktoFormCol{
     margin-bottom: 14px!important;
+}
+.form-container .mktoForm select.mktoField, .form-container .mktoForm input{
+    font-size: 18px!important;
 }
 .content .main-image{
     align-self: flex-end;
@@ -321,7 +324,7 @@ footer>iframe{
     color: #6D6D65 !important;  
 }
 @media (max-width:450px){
-    .form-container .mktoForm select.mktoField{
+    .form-container .mktoForm select.mktoField,.form-container .mktoForm input{
         font-size: 26px !important; 
         
     }
@@ -344,6 +347,9 @@ footer>iframe{
     }
     .app-container{
         padding: 0 18px!important;
+    }
+    .dropdown-content{
+        right: -18px;
     }
     .main-image{
         display: none;
@@ -392,7 +398,7 @@ footer>iframe{
         margin-bottom: 21px!important;
     }
     .content .form-container .form-title{
-        font-size: 38px;
+        font-size: 39px;
     }
     .content .form-container .form-title .first-word{
         display: inline;
@@ -407,8 +413,8 @@ footer>iframe{
         width:292px;
     }
     .content .form-container .form-information-par{
-        padding: 0 9px;
-        margin-left: 8px;
+        padding: 0 10px;
+        padding-right: 13px;
     }
     .form-container #mktoForm_1307{
             padding: 0!important;
@@ -437,6 +443,7 @@ footer>iframe{
         margin-right: 20px;
 
     }
+
     .logo{
 
         width: 235px;
@@ -459,7 +466,7 @@ footer>iframe{
         min-width: 100%;
         overflow: auto;
         top: 100%;
-        right:-7.5px;
+        right:-9px;
         left:auto;
 
     }
