@@ -401,6 +401,9 @@ footer>iframe{
         font-size: 26px !important;
 
     }
+    header .app-container{
+        padding-top: 0;
+    }
     .header>h1{
         font-size: 50px;
         text-transform: uppercase;
@@ -481,6 +484,7 @@ footer>iframe{
     }
     .content .form-container .form-title{
         font-size: 39px!important;
+        margin-top: 4px;
     }
     .content .form-container .form-title .first-word{
         display: inline!important;
@@ -533,7 +537,7 @@ footer>iframe{
     .header>h1{
         font-size: 40px!important;
     }
-   
+
     .form-container .mktoForm .mktoButtonRow{
         padding-left: 0!important;
     }
@@ -562,9 +566,11 @@ footer>iframe{
 
     .content .form-container .form-title{
         font-size: 33px!important;
-        margin-top:14px!important;
+        margin-top:18px!important;
         margin-bottom: 22px!important;
+        margin-left:-2px;
         text-align: left!important;
+        padding-top: 0;
 
     }
     .header>h1{
