@@ -395,7 +395,7 @@ footer>iframe{
         display: block;
     }
     .content .form-container .mktoFormCol{
-        margin-bottom: 21px!important;
+        margin-bottom: 20px!important;
     }
     .content .form-container .form-title{
         font-size: 39px;
@@ -443,6 +443,12 @@ footer>iframe{
         margin-right: 20px;
 
     }
+    .form-container .form-title{
+        font-size: 33px!important;
+        margin-top: 9px!important;
+        text-align: left;
+        padding-left: 12px;
+    }
 
     .logo{
 
@@ -473,6 +479,9 @@ footer>iframe{
   
  .form-title{
         margin-top: 7px;
+    }
+    .content .form-container .mktoFormCol{
+        margin-bottom: 19px!important;
     }
 }
 @media (max-width: 800px) {
