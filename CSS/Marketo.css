@@ -436,31 +436,29 @@ footer>iframe{
     footer>iframe ,footer>h1 {
         display: none;
     }
-    footer .vid{
-        display: none;
-    }
+  
     .foot-img{
-        display: block !important;
-        width: 100%!important;
+        display: block ;
+        width: 100%;
         margin-bottom:260px; 
     }
   
     footer .foot-img img{
         display: block;
-        width: 100%!important;
+        width: 100%;
         height: auto;
        
     }
     .foot-img .foot-p{
-        padding-right: 62px;
+        padding-right: 66px;
         padding-left: 55px;
         padding-top: 35px;
-        width: 100% !important;
+        width: 100%;
       
         font-size: 45px;
         display: block;
         background: #635370;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman';
         font-style: italic;
         color: #f4f3f5;
         line-height:45px;
@@ -471,7 +469,51 @@ footer>iframe{
         padding-top:40px;
         font-family: vista-sans;
         font-size: 38.29px;
+        margin-bottom:32px;
     }
+}
+@media (max-width: 460px){
+   
+    footer>iframe ,footer>h1 {
+        display: block;
+    }
+    .foot-img{
+        display: none;
+    }
+   
+    hr{
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    footer>iframe{
+        margin-top: 26px!important;
+        margin-right:auto;
+        margin-left: auto;
+        height:256px!important;
+        width:292px!important;
+    }
+}
+@media (max-width: 460px) and (min-width: 321px){
+    .form-container .mktoForm select.mktoField, .form-container .mktoForm input,.form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
+        width: 100%!important;
+
+    }
+    .form-container .mktoForm select.mktoField, .form-container .mktoForm input{
+        padding-left: 13px!important;
+    }
+    .form-container #FirstName,.form-container #LastName{
+        width: 100% !important;
+    }
+
+    .form-container .mktoForm .mktoButtonRow{
+        padding-left: 0!important;
+    }
+    .form-container .mktoFormRow{
+        width: 100%!important;
+    }
+
 }
 @media (max-width:451px){
     .form-container .mktoForm select.mktoField,.form-container .mktoForm input{
@@ -576,11 +618,7 @@ footer>iframe{
     .content .form-container .form-title .second-word{
         text-transform: none!important;
     }
-    footer>iframe{
-        margin-top: 26px!important;
-        height:256px!important;
-        width:292px!important;
-    }
+   
     .content .form-container .form-information-par{
         padding: 0 10px!important;
         padding-right: 13px!important;
@@ -596,26 +634,7 @@ footer>iframe{
 }
 
 
-@media (max-width: 460px) and (min-width: 321px){
-    .form-container .mktoForm select.mktoField, .form-container .mktoForm input,.form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
-        width: 100%!important;
 
-    }
-    .form-container .mktoForm select.mktoField, .form-container .mktoForm input{
-        padding-left: 13px!important;
-    }
-    .form-container #FirstName,.form-container #LastName{
-        width: 100% !important;
-    }
-
-    .form-container .mktoForm .mktoButtonRow{
-        padding-left: 0!important;
-    }
-    .form-container .mktoFormRow{
-        width: 100%!important;
-    }
-
-}
 @media (max-width: 360px) and (min-width: 0px){
     .header>h1{
         font-size: 40px!important;
