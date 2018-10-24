@@ -263,6 +263,13 @@ footer{
 footer>iframe{
     display: inline-block;
 }
+.form-container #FirstName,.form-container #LastName{
+    border-color: #8f8f87;
+}
+.form-container .mktoForm select.mktoField, .form-container .mktoForm input{
+    border-color: #8f8f87;
+    border-style:solid;
+}
 
 /*Mobile*/
 .form-container .mktoFieldDescriptor .mktoFormCol{
