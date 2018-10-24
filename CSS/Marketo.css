@@ -270,8 +270,80 @@ footer>iframe{
     border-color: #8f8f87;
     border-style:solid;
 }
+.form-container #Phone{
+    border: 1px solid #8f8f87!important;
+}
+/*CheckBox*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 41px;
+    width: 41px;
+    background-color: #f7f7ef;
+    border:1px solid #8f8f87;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 27px;
+    top: -18px;
+    width: 8px;
+    height: 45px;
+    border: solid #8f8f87;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(42deg);
+}
+/*CheckBox*/
 /*Mobile*/
+
 .form-container .mktoFieldDescriptor .mktoFormCol{
     width: 100%!important;
 }
@@ -284,6 +356,28 @@ footer>iframe{
 }
 .form-container .mktoForm select.mktoField,.form-container .mktoForm input{
     color: #6D6D65 !important;
+}
+.form-container #new_dateofbirth{
+    width: 75% !important;
+}
+.form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+    width: 25% !important;
+}
+.form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
+    width: 87% !important;
+}
+.form-container #new_confirmedschoolperformancefactsheet{
+    width: 100% !important;
+}
+.form-container .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList{
+    width: 13% !important;
+    float: left!important;
+}
+.form-container .mktoForm .mktoLabel{
+    float: left !important;
+}
+.form-container .mktoForm .mktoLabel[for="new_confirmedschoolperformancefactsheet"]{
+    float: right !important;
 }
 
 @media (min-width: 1025px) {
@@ -387,7 +481,7 @@ footer>iframe{
         font-size: 30px !important;
         padding-left: 25px !important;
     }
-    .form-container #FirstName,.form-container #LastName{
+    .form-container #FirstName,.form-container #LastName,.form-container #Phone, .form-container #new_primarycountrycode{
         width: 100%!important;
     }
     .form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
@@ -502,6 +596,11 @@ footer>iframe{
         width:292px!important;
     }
 }
+@media( max-width: 480px){
+    .form-container .mktoForm .mktoFormRow .mktoField{
+        clear: none!important;
+    }
+}
 @media (max-width: 460px) and (min-width: 321px){
     .form-container .mktoForm select.mktoField, .form-container .mktoForm input,.form-container .mktoForm button.mktoButton,.form-container .mktoForm .mktoButtonRow{
         width: 100%!important;
@@ -510,7 +609,7 @@ footer>iframe{
     .form-container .mktoForm select.mktoField, .form-container .mktoForm input{
         padding-left: 13px!important;
     }
-    .form-container #FirstName,.form-container #LastName{
+    .form-container #FirstName,.form-container #LastName,.form-container #Phone,.form-container #new_primarycountrycode{
         width: 100% !important;
     }
 
@@ -631,6 +730,9 @@ footer>iframe{
         padding-right: 13px!important;
     }
     .form-container #mktoForm_1307{
+         padding: 0!important;
+     }
+    .form-container #mktoForm_1308{
         padding: 0!important;
     }
     .header{
@@ -643,6 +745,10 @@ footer>iframe{
 
 
 @media (max-width: 360px) and (min-width: 0px){
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        padding-right: 10px!important;
+        text-align: left!important;
+    }
     .header>h1{
         font-size: 40px!important;
     }
@@ -662,6 +768,7 @@ footer>iframe{
     .app-container.section{
         max-width: 294px;
         min-width: 294px;
+        padding: 0!important;
     }
 
     hr{
