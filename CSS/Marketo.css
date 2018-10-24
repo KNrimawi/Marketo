@@ -424,7 +424,54 @@ footer>iframe{
     header .app-container{
         padding-top: 22px;
     }
+    footer{
+        display: block!important;
+    }
+    hr{
+        display: block;
+        width: 100%;
+        margin-top: 75px;
+        margin-bottom: 84px;
+    }
+    footer>iframe ,footer>h1 {
+        display: none;
+    }
+    footer .vid{
+        display: none;
+    }
+    .foot-img{
+        display: block !important;
+        width: 100%!important;
+        margin-bottom:260px; 
+    }
+  
+    footer .foot-img img{
+        display: block;
+        width: 100%!important;
+        height: auto;
+       
+    }
+    .foot-img .foot-p{
+        padding-right: 62px;
+        padding-left: 55px;
+        padding-top: 35px;
+        width: 100% !important;
+      
+        font-size: 45px;
+        display: block;
+        background: #635370;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #f4f3f5;
+        line-height:45px;
 
+    }
+    .foot-img .wom-name{
+        display: inline-block;
+        padding-top:40px;
+        font-family: vista-sans;
+        font-size: 38.29px;
+    }
 }
 @media (max-width:451px){
     .form-container .mktoForm select.mktoField,.form-container .mktoForm input{
