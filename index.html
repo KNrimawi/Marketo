@@ -140,7 +140,7 @@
         {
             //Show cookie warning
             $(".sec_title h2").append("<br /><br /><div style='color: #E90172; font-size: 18px; font-weight: bold'>Our online application uses cookies to give you the best experience. Please enable cookies on your browser to start.</div>");
-            $("button[type=submit]").prop("disabled", "true");
+            $("button[type=submit]").prop("disabled", false);
 
             form.onSuccess(function (values, followUpUrl)
             {
