@@ -376,10 +376,11 @@ footer>iframe{
     color: #6D6D65 !important;
 }
 .form-container #new_dateofbirth{
-    width: 75% !important;
+    width: 240px!important;
 }
 .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
-    width: 25% !important;
+    width: 107px !important;
+    color:#65656D!important;
 }
 .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
     width: 87% !important;
@@ -444,6 +445,12 @@ footer>iframe{
 }
 
 @media (max-width: 800px) {
+    .form-container #new_dateofbirth{
+        width: 75%!important;
+    }
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        width: 25% !important;
+    }
     .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
         font-size: 21px!important;
     }
