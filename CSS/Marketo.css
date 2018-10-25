@@ -182,13 +182,8 @@ header .menu-bar{
 .form-container .mktoButtonRow .mktoButtonWrap {
     margin-left: 0px !important;
 }
-.form-container .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoInvalid{
-    width: 13% !important;
-}
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+.form-container .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoInvalid {
+    width: 13px !important;
 }
 /*Mobile*/
 nav{
@@ -380,16 +375,49 @@ footer>iframe{
 }
 .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
     width: 107px !important;
+    font-size: 18px!important;
     color:#65656D!important;
 }
+
 .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
-    width: 87% !important;
+    width: 92% !important;
 }
 .form-container #new_confirmedschoolperformancefactsheet{
-    width: 100% !important;
+    width: 0px !important;
+    opacity: 0!important;
+}
+.form-container .mktoForm .mktoCheckboxList > label:focus ::after{
+    content: "";
+}
+.form-container #new_confirmedschoolperformancefactsheet:checked + label::after{
+    content: "\2713";
+}
+.form-container #new_confirmedschoolperformancefactsheet:not(:checked) + label::after{
+    content: "";
+}
+.form-container .mktoForm .mktoCheckboxList > label{
+    position: relative;
+    cursor: pointer;
+    width: 13px!important;
+    height: 12px!important;
+    border: 1px solid #8f8f87;
+    margin:0!important;
+    padding: 0!important;
+
+}
+
+.form-container .mktoForm .mktoCheckboxList > label::after{
+    position: absolute;
+    color:#6d6d65;
+    transform: rotate(16deg);
+    content:"";
+    font-size: 18px;
+    left:2px;
+    top:-4px;
+
 }
 .form-container .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList{
-    width: 13% !important;
+    width: 13px !important;
     float: left!important;
 }
 .form-container .mktoForm .mktoLabel{
@@ -397,6 +425,7 @@ footer>iframe{
 }
 .form-container .mktoForm .mktoLabel[for="new_confirmedschoolperformancefactsheet"]{
     float: right !important;
+    color:#5a5a53!important;
 }
 
 @media (min-width: 1025px) {
@@ -445,6 +474,22 @@ footer>iframe{
 }
 
 @media (max-width: 800px) {
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        font-size: 30px!important;
+    }
+    .form-container .mktoForm .mktoCheckboxList > label{
+        width: 40px!important;
+        height: 39px!important;
+    }
+
+    .form-container .mktoForm .mktoCheckboxList > label::after{
+
+        transform: rotate(13deg);
+        font-size: 55px;
+        left:5px;
+        top:7px;
+
+    }
     .form-container #new_dateofbirth{
         width: 75%!important;
     }
@@ -694,6 +739,36 @@ footer>iframe{
 
 }
 @media (max-width:451px){
+    .form-container #new_dateofbirth{
+        width: 230px!important;
+
+    }
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        width: 90px!important;
+        padding: 0!important;
+    }
+    .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
+        width: 82% !important;
+    }
+    .form-container #new_maidenname{
+        font-size: 26px!important;
+    }
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        font-size: 26px!important;
+    }
+    .form-container .mktoForm .mktoCheckboxList > label{
+        width: 37px!important;
+        height: 37px!important;
+    }
+
+    .form-container .mktoForm .mktoCheckboxList > label::after{
+
+        transform: rotate(13deg);
+        font-size: 50px;
+        left:5px;
+        top:5px;
+
+    }
     .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
      font-size: 17px !important;
     }
@@ -806,6 +881,7 @@ footer>iframe{
     .content .form-container .form-information-par{
         padding: 0 10px!important;
         padding-right: 13px!important;
+        margin-left: 0!important;
     }
     .form-container #mktoForm_1307{
          padding: 0!important;
@@ -819,8 +895,6 @@ footer>iframe{
 
     }
 }
-
-
 
 @media (max-width: 360px) and (min-width: 0px){
     .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
@@ -838,6 +912,14 @@ footer>iframe{
 }
 
 @media (max-width:321px){
+    .form-container #new_dateofbirth{
+        width: 195px!important;
+
+    }
+    .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
+        width: 99px!important;
+        padding: 0!important;
+    }
 .header{
     height: 160px!important;
 }
