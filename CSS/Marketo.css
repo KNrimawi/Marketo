@@ -175,8 +175,12 @@ header .menu-bar{
  
     opacity: 1;
 }
-
-
+.form-container .mktoButtonRow .mktoButtonWrap {
+    margin-left: 0px !important;
+}
+.form-container .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoInvalid{
+    width: 13% !important;
+}
 /*Mobile*/
 nav{
     background: #4b345d;
