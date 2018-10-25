@@ -150,7 +150,8 @@ header .menu-bar{
 }
 
 .content .form-container .form-information-par{
-
+    width:328px;
+    margin-left: 11px;
     font-family: vista-sans;
     font-size:10px;
     text-align: center;
@@ -584,6 +585,10 @@ footer>iframe{
         font-size: 38.29px;
         margin-bottom:32px;
     }
+    .form-information-par{
+        width:100%!important;
+        padding-right: 29px!important;
+         }
 }
 @media(max-width:799px){
     .header{
