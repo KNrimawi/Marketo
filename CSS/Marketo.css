@@ -185,6 +185,11 @@ header .menu-bar{
 .form-container .mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoInvalid{
     width: 13% !important;
 }
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
 /*Mobile*/
 nav{
     background: #4b345d;
@@ -439,6 +444,9 @@ footer>iframe{
 }
 
 @media (max-width: 800px) {
+    .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
+        font-size: 21px!important;
+    }
     header{
         height:134px;
     }
@@ -679,6 +687,9 @@ footer>iframe{
 
 }
 @media (max-width:451px){
+    .form-container .mktoLabel.mktoHasWidth[for="new_confirmedschoolperformancefactsheet"]{
+     font-size: 17px !important;
+    }
     .header{
         height: 160px!important;
     }
