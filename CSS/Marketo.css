@@ -283,9 +283,7 @@ footer>iframe{
     border-color: #8f8f87;
     border-style:solid;
 }
-.form-container #Phone{
-    border: 1px solid #8f8f87!important;
-}
+
 /*CheckBox*/
 .container {
     display: block;
@@ -474,6 +472,9 @@ footer>iframe{
 }
 
 @media (max-width: 800px) {
+    .form-container #Phone{
+        border: 1px solid #8f8f87!important;
+    }
     .form-container .mktoLabel.mktoHasWidth[for="new_dateofbirth"]{
         font-size: 30px!important;
     }
