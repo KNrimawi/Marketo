@@ -171,6 +171,11 @@ header .menu-bar{
 }
 
 
+.form-container .mktoForm input::-moz-placeholder{
+ 
+    opacity: 1;
+}
+
 
 /*Mobile*/
 nav{
